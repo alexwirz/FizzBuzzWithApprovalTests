@@ -21,6 +21,8 @@ namespace FizzBuzz
 
         private string FizzBuzz(string number)
         {
+            var numberAsInt = Int32.Parse(number);
+            if (numberAsInt % 3 == 0) return "fizz";
             return number;
         }
     }
