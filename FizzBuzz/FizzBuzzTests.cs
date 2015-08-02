@@ -22,7 +22,9 @@ namespace FizzBuzz
         private string FizzBuzz(string number)
         {
             var numberAsInt = Int32.Parse(number);
+            if (numberAsInt % 15 == 0) return "fizz buzz";
             if (numberAsInt % 3 == 0) return "fizz";
+            if (numberAsInt % 5 == 0) return "buzz";
             return number;
         }
     }
